@@ -360,19 +360,20 @@
 </section>
 </main>
 <footer class="basement">
-    <div class="container foot-container">
-        <div class="contact-footer-box">
-    <a href="./index.html" class="logo">Web<span class="studio footer">Studio</span> </a>
-    <address class="address">
-        <ul class="contact-nav-basement list">
-            <li class="address-item"><a href="" class="contact-footer-address">м. Київ, пр-т Лесі Українки, 26</a></li>
-            <li class="address-item"><a href="mailto:info@devstudio.com" class="contact-link footer">info@devstudio.com</a> </li>
-            <li class="address-item"><a href="telto:+380961111111" class="contact-link footer">+38 096 111 11 11</a> </li> 
-        </ul>
-      </address>
+<div class="container foot-container">
+    <div class="contact-footer-box">
+        <a href="./index.html" class="logo">Web<span class="studio footer">Studio</span> </a>
+        <address class="address">
+            <ul class="contact-nav-basement list">
+                <li class="address-item">
+                    <a href="" class="contact-footer-address">м. Київ, пр-т Лесі Українки, 26</a></li>
+                <li class="address-item"><a href="mailto:info@devstudio.com" class="contact-link footer">info@devstudio.com</a> </li>
+                <li class="address-item"><a href="telto:+380961111111" class="contact-link footer">+38 096 111 11 11</a> </li> 
+            </ul>
+          </address>
     </div>
-        <div class="social-footer-box">
-            <h2 class="footer-title">Приєднуйтесь</h2>
+    <div class="social-footer-box">
+        <h2 class="footer-title">Приєднуйтесь</h2>
             <ul class="social-networks-footer list">
                 <li>
                     <a class="social-link social-link-footer" href="">
@@ -403,21 +404,23 @@
                     </a>
                 </li>
             </ul>
-        </div>
-      </div>
-        <div class="footer-form-box">
+    </div>
+    <div class="footer-form-box">
         <h2 class="footer-title footer-title-form">Підпишіться на розсилку</h2>
         <form class="footer-form">
+            <label>
             <input class="e-mail-input" type="email" placeholder="E-mail" name="user-">
+        </label>
             <button type="submit" class="button button-footer-form">
-                <p class="button-form-title">Підписатися</p>
+                Підписатися
                 <svg class="footer-icon-form" width="24" height="24" >
                     <use href="./images/icons.svg#icon-send"></use>
                 </svg>
                 </button>
     </form>
-        
-  </div>
+    </div>
+</div>
+
   </footer>
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -427,6 +430,53 @@
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
         </button>
+        <form class="modal-form">
+            <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+            <div class="form-box"> 
+               
+        <label class="modal-label">Ім'я
+        <div class="input-wrapper">
+            <input class="modal-input" type="text" name="user-name" required title="Лише літери А-Я та A-Z" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}">
+            <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-person-black"icon-email-black></use>
+            </svg>
+        </div>
+    </label>
+        <label class="modal-label">Телефон
+        <div class="input-wrapper">
+            <input class="modal-input" type="tel" name="user-phone" required title="tel: XXX XXX XXXX" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12">
+            <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-phone-black"icon-email-black></use>
+            </svg>
+        </div>
+    </label>
+        <label class="modal-label">Пошта
+        <div class="input-wrapper">
+            <input class="modal-input" type="email" name="user-email" required title="Невірна адреса електронної пошти" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <svg class="modal-icon">
+                <use href="./images/icons.svg#icon-email-black"icon-email-black></use>
+            </svg>
+        </div>
+    </label>
+        <label class="modal-label" for="message-label">Коментар</label>
+       
+            <textarea id="message-label" name="message" class="modal-message" placeholder="Введіть текст"></textarea>
+       
+        </div>
+         
+        
+        <input type="checkbox" class="checkbox-input visually-hidden" name="modal-checkbox" required id="consent">
+        <label for="consent" class="checkbox-label">
+            <span class="focus-checkbox">
+                <svg  class="checkbox-icon">
+                    <use href="./images/icons.svg#checked"></use>
+                </svg>
+            </span> Погоджуюся з розсилкою та приймаю <a class="contract-accent" href="">Умови договору</a> 
+        </label>
+    
+            <button class="button modal-button" type="submit">Відправити</button>
+        
+        </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
