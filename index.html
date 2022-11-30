@@ -435,28 +435,28 @@
             <div class="form-box"> 
                
         <label class="modal-label">Ім'я
-        <div class="input-wrapper">
+        <span class="input-wrapper">
             <input class="modal-input" type="text" name="user-name" required title="Лише літери А-Я та A-Z" pattern="[A-Za-zА-Яа-яЁёІіЇїЄє]{2,20}">
             <svg class="modal-icon">
-                <use href="./images/icons.svg#icon-person-black"icon-email-black></use>
+                <use href="./images/icons.svg#icon-person-black"></use>
             </svg>
-        </div>
+        </span>
     </label>
         <label class="modal-label">Телефон
-        <div class="input-wrapper">
+        <span class="input-wrapper">
             <input class="modal-input" type="tel" name="user-phone" required title="tel: XXX XXX XXXX" pattern="[0-9]{3} [0-9]{3} [0-9]{4}" maxlength="12">
             <svg class="modal-icon">
-                <use href="./images/icons.svg#icon-phone-black"icon-email-black></use>
+                <use href="./images/icons.svg#icon-phone-black" ></use>
             </svg>
-        </div>
+        </span>
     </label>
         <label class="modal-label">Пошта
-        <div class="input-wrapper">
+        <span class="input-wrapper">
             <input class="modal-input" type="email" name="user-email" required title="Невірна адреса електронної пошти" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
             <svg class="modal-icon">
-                <use href="./images/icons.svg#icon-email-black"icon-email-black></use>
+                <use href="./images/icons.svg#icon-email-black" ></use>
             </svg>
-        </div>
+        </span>
     </label>
         <label class="modal-label" for="message-label">Коментар</label>
        
@@ -464,7 +464,7 @@
        
         </div>
          
-        
+        <div class="checkbox-box">
         <input type="checkbox" class="checkbox-input visually-hidden" name="modal-checkbox" required id="consent">
         <label for="consent" class="checkbox-label">
             
@@ -475,7 +475,7 @@
             </span> Погоджуюся з розсилкою та приймаю <a class="contract-accent" href="">Умови договору</a> 
         
         </label>
-    
+    </div>
             <button class="button modal-button" type="submit">Відправити</button>
         
         </form>
